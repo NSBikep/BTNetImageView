@@ -1,0 +1,279 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB50A72A17794AD0009FE4DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB50A72917794AD0009FE4DE /* UIKit.framework */; };
+		DB50A72C17794AD0009FE4DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB50A72B17794AD0009FE4DE /* Foundation.framework */; };
+		DB50A72E17794AD0009FE4DE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB50A72D17794AD0009FE4DE /* CoreGraphics.framework */; };
+		DB50A73417794AD0009FE4DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB50A73217794AD0009FE4DE /* InfoPlist.strings */; };
+		DB50A73617794AD0009FE4DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB50A73517794AD0009FE4DE /* main.m */; };
+		DB50A73A17794AD0009FE4DE /* BTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB50A73917794AD0009FE4DE /* BTAppDelegate.m */; };
+		DB50A73C17794AD0009FE4DE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DB50A73B17794AD0009FE4DE /* Default.png */; };
+		DB50A73E17794AD0009FE4DE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB50A73D17794AD0009FE4DE /* Default@2x.png */; };
+		DB50A74017794AD0009FE4DE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB50A73F17794AD0009FE4DE /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DB50A72517794AD0009FE4DE /* BTNetImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTNetImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB50A72917794AD0009FE4DE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DB50A72B17794AD0009FE4DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DB50A72D17794AD0009FE4DE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DB50A73117794AD0009FE4DE /* BTNetImageView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BTNetImageView-Info.plist"; sourceTree = "<group>"; };
+		DB50A73317794AD0009FE4DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DB50A73517794AD0009FE4DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DB50A73717794AD0009FE4DE /* BTNetImageView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BTNetImageView-Prefix.pch"; sourceTree = "<group>"; };
+		DB50A73817794AD0009FE4DE /* BTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTAppDelegate.h; sourceTree = "<group>"; };
+		DB50A73917794AD0009FE4DE /* BTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTAppDelegate.m; sourceTree = "<group>"; };
+		DB50A73B17794AD0009FE4DE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		DB50A73D17794AD0009FE4DE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		DB50A73F17794AD0009FE4DE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB50A72217794AD0009FE4DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB50A72A17794AD0009FE4DE /* UIKit.framework in Frameworks */,
+				DB50A72C17794AD0009FE4DE /* Foundation.framework in Frameworks */,
+				DB50A72E17794AD0009FE4DE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB50A71A17794AD0009FE4DE = {
+			isa = PBXGroup;
+			children = (
+				DB50A72F17794AD0009FE4DE /* BTNetImageView */,
+				DB50A72817794AD0009FE4DE /* Frameworks */,
+				DB50A72617794AD0009FE4DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB50A72617794AD0009FE4DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB50A72517794AD0009FE4DE /* BTNetImageView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB50A72817794AD0009FE4DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB50A72917794AD0009FE4DE /* UIKit.framework */,
+				DB50A72B17794AD0009FE4DE /* Foundation.framework */,
+				DB50A72D17794AD0009FE4DE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB50A72F17794AD0009FE4DE /* BTNetImageView */ = {
+			isa = PBXGroup;
+			children = (
+				DB50A73817794AD0009FE4DE /* BTAppDelegate.h */,
+				DB50A73917794AD0009FE4DE /* BTAppDelegate.m */,
+				DB50A73017794AD0009FE4DE /* Supporting Files */,
+			);
+			path = BTNetImageView;
+			sourceTree = "<group>";
+		};
+		DB50A73017794AD0009FE4DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB50A73117794AD0009FE4DE /* BTNetImageView-Info.plist */,
+				DB50A73217794AD0009FE4DE /* InfoPlist.strings */,
+				DB50A73517794AD0009FE4DE /* main.m */,
+				DB50A73717794AD0009FE4DE /* BTNetImageView-Prefix.pch */,
+				DB50A73B17794AD0009FE4DE /* Default.png */,
+				DB50A73D17794AD0009FE4DE /* Default@2x.png */,
+				DB50A73F17794AD0009FE4DE /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB50A72417794AD0009FE4DE /* BTNetImageView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB50A74317794AD0009FE4DE /* Build configuration list for PBXNativeTarget "BTNetImageView" */;
+			buildPhases = (
+				DB50A72117794AD0009FE4DE /* Sources */,
+				DB50A72217794AD0009FE4DE /* Frameworks */,
+				DB50A72317794AD0009FE4DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BTNetImageView;
+			productName = BTNetImageView;
+			productReference = DB50A72517794AD0009FE4DE /* BTNetImageView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB50A71C17794AD0009FE4DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BT;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "王 浩宇";
+			};
+			buildConfigurationList = DB50A71F17794AD0009FE4DE /* Build configuration list for PBXProject "BTNetImageView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DB50A71A17794AD0009FE4DE;
+			productRefGroup = DB50A72617794AD0009FE4DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB50A72417794AD0009FE4DE /* BTNetImageView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB50A72317794AD0009FE4DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB50A73417794AD0009FE4DE /* InfoPlist.strings in Resources */,
+				DB50A73C17794AD0009FE4DE /* Default.png in Resources */,
+				DB50A73E17794AD0009FE4DE /* Default@2x.png in Resources */,
+				DB50A74017794AD0009FE4DE /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB50A72117794AD0009FE4DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB50A73617794AD0009FE4DE /* main.m in Sources */,
+				DB50A73A17794AD0009FE4DE /* BTAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DB50A73217794AD0009FE4DE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB50A73317794AD0009FE4DE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB50A74117794AD0009FE4DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DB50A74217794AD0009FE4DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB50A74417794AD0009FE4DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BTNetImageView/BTNetImageView-Prefix.pch";
+				INFOPLIST_FILE = "BTNetImageView/BTNetImageView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DB50A74517794AD0009FE4DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BTNetImageView/BTNetImageView-Prefix.pch";
+				INFOPLIST_FILE = "BTNetImageView/BTNetImageView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB50A71F17794AD0009FE4DE /* Build configuration list for PBXProject "BTNetImageView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB50A74117794AD0009FE4DE /* Debug */,
+				DB50A74217794AD0009FE4DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB50A74317794AD0009FE4DE /* Build configuration list for PBXNativeTarget "BTNetImageView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB50A74417794AD0009FE4DE /* Debug */,
+				DB50A74517794AD0009FE4DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB50A71C17794AD0009FE4DE /* Project object */;
+}
