@@ -16,6 +16,23 @@
 		DB50A73C17794AD0009FE4DE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DB50A73B17794AD0009FE4DE /* Default.png */; };
 		DB50A73E17794AD0009FE4DE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB50A73D17794AD0009FE4DE /* Default@2x.png */; };
 		DB50A74017794AD0009FE4DE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB50A73F17794AD0009FE4DE /* Default-568h@2x.png */; };
+		DB50A74F17794C50009FE4DE /* global0.json in Resources */ = {isa = PBXBuildFile; fileRef = DB50A74817794C50009FE4DE /* global0.json */; };
+		DB50A75017794C50009FE4DE /* global1.json in Resources */ = {isa = PBXBuildFile; fileRef = DB50A74917794C50009FE4DE /* global1.json */; };
+		DB50A75117794C50009FE4DE /* global2.json in Resources */ = {isa = PBXBuildFile; fileRef = DB50A74A17794C50009FE4DE /* global2.json */; };
+		DB50A75217794C50009FE4DE /* global3.json in Resources */ = {isa = PBXBuildFile; fileRef = DB50A74B17794C50009FE4DE /* global3.json */; };
+		DB50A75417794C50009FE4DE /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DB50A74D17794C50009FE4DE /* icon.png */; };
+		DB50A75517794C50009FE4DE /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB50A74E17794C50009FE4DE /* icon@2x.png */; };
+		DBF2652E177AF15E004F8ECD /* BTConcurrentOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF26520177AF15E004F8ECD /* BTConcurrentOperation.m */; };
+		DBF2652F177AF15E004F8ECD /* BTImageManger.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF26522177AF15E004F8ECD /* BTImageManger.m */; };
+		DBF26530177AF15E004F8ECD /* BTOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF26524177AF15E004F8ECD /* BTOperationViewController.m */; };
+		DBF26531177AF15E004F8ECD /* BTURLImageResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF26526177AF15E004F8ECD /* BTURLImageResponse.m */; };
+		DBF26532177AF15E004F8ECD /* BTURLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF26528177AF15E004F8ECD /* BTURLRequestOperation.m */; };
+		DBF26533177AF15E004F8ECD /* UIImageView+Network.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF2652B177AF15E004F8ECD /* UIImageView+Network.m */; };
+		DBF26534177AF15E004F8ECD /* UIViewController+UIImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF2652D177AF15E004F8ECD /* UIViewController+UIImageView.m */; };
+		DBF26538177AF180004F8ECD /* BTCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF26537177AF180004F8ECD /* BTCache.m */; };
+		DBF26541177AF208004F8ECD /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF2653E177AF208004F8ECD /* NSDataAdditions.m */; };
+		DBF26542177AF208004F8ECD /* NSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF26540177AF208004F8ECD /* NSStringAdditions.m */; };
+		DBF26543177AF38B004F8ECD /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF26517177AF0C0004F8ECD /* SDWebImageDecoder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +49,37 @@
 		DB50A73B17794AD0009FE4DE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		DB50A73D17794AD0009FE4DE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		DB50A73F17794AD0009FE4DE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DB50A74817794C50009FE4DE /* global0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = global0.json; sourceTree = "<group>"; };
+		DB50A74917794C50009FE4DE /* global1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = global1.json; sourceTree = "<group>"; };
+		DB50A74A17794C50009FE4DE /* global2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = global2.json; sourceTree = "<group>"; };
+		DB50A74B17794C50009FE4DE /* global3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = global3.json; sourceTree = "<group>"; };
+		DB50A74D17794C50009FE4DE /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		DB50A74E17794C50009FE4DE /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		DBF26516177AF0C0004F8ECD /* SDWebImageDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDWebImageDecoder.h; sourceTree = "<group>"; };
+		DBF26517177AF0C0004F8ECD /* SDWebImageDecoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDecoder.m; sourceTree = "<group>"; };
+		DBF26518177AF109004F8ECD /* BTOperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTOperationViewController.h; sourceTree = "<group>"; };
+		DBF26519177AF109004F8ECD /* BTOperationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTOperationViewController.m; sourceTree = "<group>"; };
+		DBF2651F177AF15E004F8ECD /* BTConcurrentOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTConcurrentOperation.h; sourceTree = "<group>"; };
+		DBF26520177AF15E004F8ECD /* BTConcurrentOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTConcurrentOperation.m; sourceTree = "<group>"; };
+		DBF26521177AF15E004F8ECD /* BTImageManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTImageManger.h; sourceTree = "<group>"; };
+		DBF26522177AF15E004F8ECD /* BTImageManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTImageManger.m; sourceTree = "<group>"; };
+		DBF26523177AF15E004F8ECD /* BTOperationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTOperationViewController.h; sourceTree = "<group>"; };
+		DBF26524177AF15E004F8ECD /* BTOperationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTOperationViewController.m; sourceTree = "<group>"; };
+		DBF26525177AF15E004F8ECD /* BTURLImageResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTURLImageResponse.h; sourceTree = "<group>"; };
+		DBF26526177AF15E004F8ECD /* BTURLImageResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTURLImageResponse.m; sourceTree = "<group>"; };
+		DBF26527177AF15E004F8ECD /* BTURLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTURLRequestOperation.h; sourceTree = "<group>"; };
+		DBF26528177AF15E004F8ECD /* BTURLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTURLRequestOperation.m; sourceTree = "<group>"; };
+		DBF26529177AF15E004F8ECD /* BTURLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTURLResponse.h; sourceTree = "<group>"; };
+		DBF2652A177AF15E004F8ECD /* UIImageView+Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Network.h"; sourceTree = "<group>"; };
+		DBF2652B177AF15E004F8ECD /* UIImageView+Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Network.m"; sourceTree = "<group>"; };
+		DBF2652C177AF15E004F8ECD /* UIViewController+UIImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+UIImageView.h"; sourceTree = "<group>"; };
+		DBF2652D177AF15E004F8ECD /* UIViewController+UIImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+UIImageView.m"; sourceTree = "<group>"; };
+		DBF26536177AF180004F8ECD /* BTCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCache.h; sourceTree = "<group>"; };
+		DBF26537177AF180004F8ECD /* BTCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCache.m; sourceTree = "<group>"; };
+		DBF2653D177AF208004F8ECD /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditions.h; sourceTree = "<group>"; };
+		DBF2653E177AF208004F8ECD /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditions.m; sourceTree = "<group>"; };
+		DBF2653F177AF208004F8ECD /* NSStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringAdditions.h; sourceTree = "<group>"; };
+		DBF26540177AF208004F8ECD /* NSStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringAdditions.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +126,8 @@
 		DB50A72F17794AD0009FE4DE /* BTNetImageView */ = {
 			isa = PBXGroup;
 			children = (
+				DB50A74617794C1A009FE4DE /* BTNetImageView */,
+				DB50A74717794C1A009FE4DE /* controller */,
 				DB50A73817794AD0009FE4DE /* BTAppDelegate.h */,
 				DB50A73917794AD0009FE4DE /* BTAppDelegate.m */,
 				DB50A73017794AD0009FE4DE /* Supporting Files */,
@@ -88,6 +138,12 @@
 		DB50A73017794AD0009FE4DE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DB50A74817794C50009FE4DE /* global0.json */,
+				DB50A74917794C50009FE4DE /* global1.json */,
+				DB50A74A17794C50009FE4DE /* global2.json */,
+				DB50A74B17794C50009FE4DE /* global3.json */,
+				DB50A74D17794C50009FE4DE /* icon.png */,
+				DB50A74E17794C50009FE4DE /* icon@2x.png */,
 				DB50A73117794AD0009FE4DE /* BTNetImageView-Info.plist */,
 				DB50A73217794AD0009FE4DE /* InfoPlist.strings */,
 				DB50A73517794AD0009FE4DE /* main.m */,
@@ -97,6 +153,78 @@
 				DB50A73F17794AD0009FE4DE /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DB50A74617794C1A009FE4DE /* BTNetImageView */ = {
+			isa = PBXGroup;
+			children = (
+				DBF2653C177AF208004F8ECD /* Additions */,
+				DBF26535177AF180004F8ECD /* Cache */,
+				DBF2651E177AF15E004F8ECD /* ImageManager */,
+				DBF26514177AF0AE004F8ECD /* Decode */,
+			);
+			path = BTNetImageView;
+			sourceTree = "<group>";
+		};
+		DB50A74717794C1A009FE4DE /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				DBF26518177AF109004F8ECD /* BTOperationViewController.h */,
+				DBF26519177AF109004F8ECD /* BTOperationViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		DBF26514177AF0AE004F8ECD /* Decode */ = {
+			isa = PBXGroup;
+			children = (
+				DBF26516177AF0C0004F8ECD /* SDWebImageDecoder.h */,
+				DBF26517177AF0C0004F8ECD /* SDWebImageDecoder.m */,
+			);
+			name = Decode;
+			path = decode;
+			sourceTree = "<group>";
+		};
+		DBF2651E177AF15E004F8ECD /* ImageManager */ = {
+			isa = PBXGroup;
+			children = (
+				DBF2651F177AF15E004F8ECD /* BTConcurrentOperation.h */,
+				DBF26520177AF15E004F8ECD /* BTConcurrentOperation.m */,
+				DBF26521177AF15E004F8ECD /* BTImageManger.h */,
+				DBF26522177AF15E004F8ECD /* BTImageManger.m */,
+				DBF26523177AF15E004F8ECD /* BTOperationViewController.h */,
+				DBF26524177AF15E004F8ECD /* BTOperationViewController.m */,
+				DBF26525177AF15E004F8ECD /* BTURLImageResponse.h */,
+				DBF26526177AF15E004F8ECD /* BTURLImageResponse.m */,
+				DBF26527177AF15E004F8ECD /* BTURLRequestOperation.h */,
+				DBF26528177AF15E004F8ECD /* BTURLRequestOperation.m */,
+				DBF26529177AF15E004F8ECD /* BTURLResponse.h */,
+				DBF2652A177AF15E004F8ECD /* UIImageView+Network.h */,
+				DBF2652B177AF15E004F8ECD /* UIImageView+Network.m */,
+				DBF2652C177AF15E004F8ECD /* UIViewController+UIImageView.h */,
+				DBF2652D177AF15E004F8ECD /* UIViewController+UIImageView.m */,
+			);
+			path = ImageManager;
+			sourceTree = "<group>";
+		};
+		DBF26535177AF180004F8ECD /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				DBF26536177AF180004F8ECD /* BTCache.h */,
+				DBF26537177AF180004F8ECD /* BTCache.m */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		DBF2653C177AF208004F8ECD /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				DBF2653D177AF208004F8ECD /* NSDataAdditions.h */,
+				DBF2653E177AF208004F8ECD /* NSDataAdditions.m */,
+				DBF2653F177AF208004F8ECD /* NSStringAdditions.h */,
+				DBF26540177AF208004F8ECD /* NSStringAdditions.m */,
+			);
+			path = Additions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +283,12 @@
 				DB50A73C17794AD0009FE4DE /* Default.png in Resources */,
 				DB50A73E17794AD0009FE4DE /* Default@2x.png in Resources */,
 				DB50A74017794AD0009FE4DE /* Default-568h@2x.png in Resources */,
+				DB50A74F17794C50009FE4DE /* global0.json in Resources */,
+				DB50A75017794C50009FE4DE /* global1.json in Resources */,
+				DB50A75117794C50009FE4DE /* global2.json in Resources */,
+				DB50A75217794C50009FE4DE /* global3.json in Resources */,
+				DB50A75417794C50009FE4DE /* icon.png in Resources */,
+				DB50A75517794C50009FE4DE /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +301,17 @@
 			files = (
 				DB50A73617794AD0009FE4DE /* main.m in Sources */,
 				DB50A73A17794AD0009FE4DE /* BTAppDelegate.m in Sources */,
+				DBF2652E177AF15E004F8ECD /* BTConcurrentOperation.m in Sources */,
+				DBF2652F177AF15E004F8ECD /* BTImageManger.m in Sources */,
+				DBF26530177AF15E004F8ECD /* BTOperationViewController.m in Sources */,
+				DBF26531177AF15E004F8ECD /* BTURLImageResponse.m in Sources */,
+				DBF26532177AF15E004F8ECD /* BTURLRequestOperation.m in Sources */,
+				DBF26533177AF15E004F8ECD /* UIImageView+Network.m in Sources */,
+				DBF26534177AF15E004F8ECD /* UIViewController+UIImageView.m in Sources */,
+				DBF26538177AF180004F8ECD /* BTCache.m in Sources */,
+				DBF26541177AF208004F8ECD /* NSDataAdditions.m in Sources */,
+				DBF26543177AF38B004F8ECD /* SDWebImageDecoder.m in Sources */,
+				DBF26542177AF208004F8ECD /* NSStringAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +382,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BTNetImageView/BTNetImageView-Prefix.pch";
 				INFOPLIST_FILE = "BTNetImageView/BTNetImageView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -248,6 +394,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BTNetImageView/BTNetImageView-Prefix.pch";
 				INFOPLIST_FILE = "BTNetImageView/BTNetImageView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -272,6 +419,7 @@
 				DB50A74517794AD0009FE4DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
