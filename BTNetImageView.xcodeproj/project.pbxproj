@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB48A287177AF90200166412 /* BTRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB48A286177AF90200166412 /* BTRootController.m */; };
 		DB50A72A17794AD0009FE4DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB50A72917794AD0009FE4DE /* UIKit.framework */; };
 		DB50A72C17794AD0009FE4DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB50A72B17794AD0009FE4DE /* Foundation.framework */; };
 		DB50A72E17794AD0009FE4DE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB50A72D17794AD0009FE4DE /* CoreGraphics.framework */; };
@@ -24,7 +25,6 @@
 		DB50A75517794C50009FE4DE /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB50A74E17794C50009FE4DE /* icon@2x.png */; };
 		DBF2652E177AF15E004F8ECD /* BTConcurrentOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF26520177AF15E004F8ECD /* BTConcurrentOperation.m */; };
 		DBF2652F177AF15E004F8ECD /* BTImageManger.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF26522177AF15E004F8ECD /* BTImageManger.m */; };
-		DBF26530177AF15E004F8ECD /* BTOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF26524177AF15E004F8ECD /* BTOperationViewController.m */; };
 		DBF26531177AF15E004F8ECD /* BTURLImageResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF26526177AF15E004F8ECD /* BTURLImageResponse.m */; };
 		DBF26532177AF15E004F8ECD /* BTURLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF26528177AF15E004F8ECD /* BTURLRequestOperation.m */; };
 		DBF26533177AF15E004F8ECD /* UIImageView+Network.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF2652B177AF15E004F8ECD /* UIImageView+Network.m */; };
@@ -33,9 +33,12 @@
 		DBF26541177AF208004F8ECD /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF2653E177AF208004F8ECD /* NSDataAdditions.m */; };
 		DBF26542177AF208004F8ECD /* NSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF26540177AF208004F8ECD /* NSStringAdditions.m */; };
 		DBF26543177AF38B004F8ECD /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF26517177AF0C0004F8ECD /* SDWebImageDecoder.m */; };
+		DBF26547177AF5C4004F8ECD /* BTOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF26519177AF109004F8ECD /* BTOperationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB48A285177AF90200166412 /* BTRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTRootController.h; sourceTree = "<group>"; };
+		DB48A286177AF90200166412 /* BTRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTRootController.m; sourceTree = "<group>"; };
 		DB50A72517794AD0009FE4DE /* BTNetImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTNetImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB50A72917794AD0009FE4DE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DB50A72B17794AD0009FE4DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,8 +66,6 @@
 		DBF26520177AF15E004F8ECD /* BTConcurrentOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTConcurrentOperation.m; sourceTree = "<group>"; };
 		DBF26521177AF15E004F8ECD /* BTImageManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTImageManger.h; sourceTree = "<group>"; };
 		DBF26522177AF15E004F8ECD /* BTImageManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTImageManger.m; sourceTree = "<group>"; };
-		DBF26523177AF15E004F8ECD /* BTOperationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTOperationViewController.h; sourceTree = "<group>"; };
-		DBF26524177AF15E004F8ECD /* BTOperationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTOperationViewController.m; sourceTree = "<group>"; };
 		DBF26525177AF15E004F8ECD /* BTURLImageResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTURLImageResponse.h; sourceTree = "<group>"; };
 		DBF26526177AF15E004F8ECD /* BTURLImageResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTURLImageResponse.m; sourceTree = "<group>"; };
 		DBF26527177AF15E004F8ECD /* BTURLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTURLRequestOperation.h; sourceTree = "<group>"; };
@@ -171,6 +172,8 @@
 			children = (
 				DBF26518177AF109004F8ECD /* BTOperationViewController.h */,
 				DBF26519177AF109004F8ECD /* BTOperationViewController.m */,
+				DB48A285177AF90200166412 /* BTRootController.h */,
+				DB48A286177AF90200166412 /* BTRootController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -192,8 +195,6 @@
 				DBF26520177AF15E004F8ECD /* BTConcurrentOperation.m */,
 				DBF26521177AF15E004F8ECD /* BTImageManger.h */,
 				DBF26522177AF15E004F8ECD /* BTImageManger.m */,
-				DBF26523177AF15E004F8ECD /* BTOperationViewController.h */,
-				DBF26524177AF15E004F8ECD /* BTOperationViewController.m */,
 				DBF26525177AF15E004F8ECD /* BTURLImageResponse.h */,
 				DBF26526177AF15E004F8ECD /* BTURLImageResponse.m */,
 				DBF26527177AF15E004F8ECD /* BTURLRequestOperation.h */,
@@ -303,15 +304,16 @@
 				DB50A73A17794AD0009FE4DE /* BTAppDelegate.m in Sources */,
 				DBF2652E177AF15E004F8ECD /* BTConcurrentOperation.m in Sources */,
 				DBF2652F177AF15E004F8ECD /* BTImageManger.m in Sources */,
-				DBF26530177AF15E004F8ECD /* BTOperationViewController.m in Sources */,
 				DBF26531177AF15E004F8ECD /* BTURLImageResponse.m in Sources */,
 				DBF26532177AF15E004F8ECD /* BTURLRequestOperation.m in Sources */,
 				DBF26533177AF15E004F8ECD /* UIImageView+Network.m in Sources */,
 				DBF26534177AF15E004F8ECD /* UIViewController+UIImageView.m in Sources */,
 				DBF26538177AF180004F8ECD /* BTCache.m in Sources */,
+				DBF26547177AF5C4004F8ECD /* BTOperationViewController.m in Sources */,
 				DBF26541177AF208004F8ECD /* NSDataAdditions.m in Sources */,
 				DBF26543177AF38B004F8ECD /* SDWebImageDecoder.m in Sources */,
 				DBF26542177AF208004F8ECD /* NSStringAdditions.m in Sources */,
+				DB48A287177AF90200166412 /* BTRootController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

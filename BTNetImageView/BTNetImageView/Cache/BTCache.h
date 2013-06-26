@@ -21,4 +21,5 @@
 - (NSBlockOperation *)imageForURL:(NSURL*)url completionBlock:(void (^)(UIImage *image, NSURL *url,BOOL isFromMemory))completion;
 - (void)setImage:(UIImage*)image forURL:(NSURL*)url;
 - (void)clearAll;
+- (void)removeAllFromLocal;
 @end

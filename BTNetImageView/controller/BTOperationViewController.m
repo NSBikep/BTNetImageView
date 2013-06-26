@@ -24,7 +24,7 @@
     if (self) {
         _users = [[NSMutableArray alloc] initWithCapacity:10];
         
-        NSURL *url = [[NSBundle mainBundle] URLForResource:@"global0" withExtension:@"json"];
+        NSURL *url = [[NSBundle mainBundle] URLForResource:@"global2" withExtension:@"json"];
         NSData *data = [NSData dataWithContentsOfURL:url];
         id responseJSON = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:NULL];
         NSArray *postsFromResponse = [responseJSON valueForKeyPath:@"data"];
@@ -50,6 +50,7 @@
     [super viewDidLoad];
     
     // Uncomment the following line to preserve selection between presentations.
+    self.title = @"BTNetImageView";
     self.clearsSelectionOnViewWillAppear = YES;
     self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(clearAndRest)] autorelease];
 }
@@ -61,11 +62,12 @@
 
 - (void)clearAndRest {
     [[BTCache sharedCache] clearAll];
-    for (NSDictionary *userDict in _users) {
-        NSURL *url = [NSURL URLWithString:[userDict valueForKeyPath:@"cover_image.url"]];
-        //NSLog(@"url:%@",url);
-        [[BTCache sharedCache] imageForURL:url completionBlock:NULL];
-    }
+//    for (NSDictionary *userDict in _users) {
+//        NSURL *url = [NSURL URLWithString:[userDict valueForKeyPath:@"cover_image.url"]];
+//        //NSLog(@"url:%@",url);
+//        [[BTCache sharedCache] imageForURL:url completionBlock:NULL];
+//    }
+    [[BTCache sharedCache] removeAllFromLocal];
 }
 
 - (void)didReceiveMemoryWarning

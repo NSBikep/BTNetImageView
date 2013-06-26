@@ -151,5 +151,8 @@ inline static NSString *keyForURL(NSURL *url) {
   [_memoryCache removeAllObjects];
 }
 
+- (void)removeAllFromLocal{
+    [[NSFileManager defaultManager] removeItemAtPath:_cachesDirectory error:nil];
+}
 
 @end

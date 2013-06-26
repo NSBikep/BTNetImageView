@@ -8,6 +8,7 @@
 
 #import "BTAppDelegate.h"
 #import "BTOperationViewController.h"
+#import "BTRootController.h"
 
 @implementation BTAppDelegate
 
@@ -23,8 +24,9 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    BTOperationViewController *opCon = [[[BTOperationViewController alloc] init] autorelease];
-    self.window.rootViewController = opCon;
+    BTRootController *opCon = [[[BTRootController alloc] init] autorelease];
+    UINavigationController *nav = [[[UINavigationController alloc] initWithRootViewController:opCon] autorelease];
+    self.window.rootViewController = nav;
     return YES;
 }
 
