@@ -73,7 +73,11 @@ static char kBTImageMemoryAndLocalOperationObjectKey = 2;
     dispatch_once(&__onceToken, ^{
         __imageRequestOperationQueue = [[NSOperationQueue alloc] init];
         [__imageRequestOperationQueue setMaxConcurrentOperationCount:3];
+        
     });
+    
+    
+    NSLog(@"获取下载队列。。。队列个数是%d",[[__imageRequestOperationQueue operations] count]);
     
     return __imageRequestOperationQueue;
 }
@@ -81,6 +85,15 @@ static char kBTImageMemoryAndLocalOperationObjectKey = 2;
 - (void)dealloc{
     self.requestURL = nil;
     [super dealloc];
+}
+
+
+- (id)init{
+    self = [super init];
+    if(self){
+        self.isAutoCancelRequest = YES;
+    }
+    return self;
 }
 
 - (void)imageForURL:(NSURL *)url completeBlock:(void (^)(UIImage *image, NSURL *url,BTImageResponseOrigin origin))complete;{
@@ -114,9 +127,6 @@ static char kBTImageMemoryAndLocalOperationObjectKey = 2;
 - (void)cancelRequest{
     //去掉从本地读取的request
     //[[BTCache sharedCache] cancelImageForURL:self.requestURL withObject:self];
-    if(self.imageCacheOperation){
-        NSLog(@"存在");
-    }
     [self.imageCacheOperation cancel];
     self.imageCacheOperation = nil;
     //去掉从网络读取的request
@@ -135,8 +145,13 @@ static char kBTImageMemoryAndLocalOperationObjectKey = 2;
 
 - (void)sendRequestWithCompleteBlock:(void (^)(UIImage *image ,NSURL *url,BTImageResponseOrigin origin))complete{
     //NSLog(@"发请求");
+    
+    //TODO: 如果在队列中存在想要发的请求怎么办？
+    
     NSURL *url = self.requestURL;    
     BTURLRequestOperationCompleteBlock completeBlock = ^(BTURLRequestOperation *op){
+        NSLog(@"请求成功");
+        [[self class] sharedImageRequestOperationQueue];
         BTURLImageResponse *response = op.urlResponse;
         UIImage *image = response.image;
         NSURL *url = op.request.URL;
@@ -158,8 +173,13 @@ static char kBTImageMemoryAndLocalOperationObjectKey = 2;
         //NSLog(@"开始请求 op =  %@",op);
     };
     
+    BTURLRequestOperationFailedBlock failBlock = ^(BTURLRequestOperation *op){
+        NSLog(@"请求失败，error = %@",op.error);
+        [[self class] sharedImageRequestOperationQueue];
+    };
     
-    BTURLRequestOperation *operation = [[BTURLRequestOperation alloc] initWithURL:url start:startBlock cancel:nil complete:completeBlock failed:nil];
+    
+    BTURLRequestOperation *operation = [[BTURLRequestOperation alloc] initWithURL:url start:startBlock cancel:nil complete:completeBlock failed:failBlock];
     operation.urlResponse = [[[BTURLImageResponse alloc] init] autorelease];
     [operation setQueuePriority:NSOperationQueuePriorityNormal];
     self.imageRequestOperation = operation;

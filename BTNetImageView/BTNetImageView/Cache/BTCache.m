@@ -48,10 +48,7 @@ inline static NSString *keyForURL(NSURL *url) {
     
     _diskOperationQueue = [[NSOperationQueue alloc] init];
     [_diskOperationQueue setMaxConcurrentOperationCount:1];
-    
-    _networkOperationQueue = [[NSOperationQueue alloc] init];
-    [_networkOperationQueue setMaxConcurrentOperationCount:3];
-    
+      
     _defaultManager = [[NSFileManager defaultManager] retain];
     NSString* sysCachesDirectory = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)[0];
     _cachesDirectory = [[[sysCachesDirectory stringByAppendingPathComponent:[[NSBundle mainBundle] bundleIdentifier]] stringByAppendingPathComponent:@"BTCache"] copy];
@@ -136,9 +133,17 @@ inline static NSString *keyForURL(NSURL *url) {
     if (!exist) {
       @try {
         NSData *data = [NSKeyedArchiver archivedDataWithRootObject:image];
-        [data writeToFile:[self filePathForKey:key] atomically:YES];
+        BOOL success = [data writeToFile:[self filePathForKey:key] atomically:YES];
+          if(success){
+              static int i =0 ;
+              i++;
+              NSLog(@"本地保存了%d个",i);
+          }else{
+              NSLog(@"存本地失败，神啊 ，告诉我为什么");
+          }
       } @catch (NSException* e) {
         // Something went wrong, but we'll fail silently.
+          NSLog(@"error");
       }
     }
     
@@ -153,6 +158,8 @@ inline static NSString *keyForURL(NSURL *url) {
 
 - (void)removeAllFromLocal{
     [[NSFileManager defaultManager] removeItemAtPath:_cachesDirectory error:nil];
+    static int i =0 ;
+    i = 0;
 }
 
 @end

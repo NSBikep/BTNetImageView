@@ -170,6 +170,22 @@ static char kBTImageManagerObjectKey = 4;
     return __memoryCache;
 }
 
+- (id)init{
+    self = [super init];
+    if(self){
+        self.isAutoCancelRequest = YES;
+    }
+    return self;
+}
+
+- (id)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if(self){
+        self.isAutoCancelRequest = YES;
+    }
+    return self;
+}
+
 - (void)setImageWithURL:(NSURL *)url {
     
     if (![self.requestURL isEqual:url]) {

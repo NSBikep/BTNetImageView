@@ -19,9 +19,6 @@ typedef NS_ENUM(unsigned short, BTImageResponseOrigin){
 
 
 @interface BTImageManger : NSObject
-
-
-
 @property (nonatomic,assign)BOOL  isloading;
 @property (nonatomic,assign)BOOL  isAutoCancelRequest;
 @property (nonatomic,assign)BTImageResponseOrigin origin;
